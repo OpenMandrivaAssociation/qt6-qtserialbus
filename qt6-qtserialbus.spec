@@ -41,7 +41,7 @@ Group: Development/KDE and Qt
 Examples for the Qt %{major} Web Sockets module
 
 %files examples
-%{_qtdir}/examples/serialbus
+%optional %{_qtdir}/examples/serialbus
 
 %prep
 %autosetup -p1 -n qtserialbus%{!?snapshot:-everywhere-src-%{version}%{?beta:-%{beta}}}
